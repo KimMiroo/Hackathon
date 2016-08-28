@@ -4,6 +4,7 @@
 Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += ['jquery.js', 'main.css']
 Rails.application.config.assets.precompile += %w( main.css )
+config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
 
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
