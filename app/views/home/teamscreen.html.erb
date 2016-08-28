@@ -1,0 +1,10 @@
+<h1><%= @select_team.name %><span style="color:red">팀</sapn></h1>
+<h2>도메인 주소 : <%= @select_team.site %></h2>
+<h2>팀 소개 : <%= @select_team.info %></h2>
+<h2>아이템 소개 : <%= @select_team.item %></h2>
+<h2>진행과정 : <%= @select_team.process %></h2>
+
+<div style="margin-left:1050px">
+    <form><button><a href="/change_teaminfo/<%= @select_team.id %>"> 수정하기 </a></button></form>
+    <form><button><a href="/teaminfo"> 목록으로 </a></button></form>
+</div>

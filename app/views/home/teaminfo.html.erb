@@ -1,0 +1,26 @@
+    <!-- Page Content -->
+    <div style="margin-left:550px">
+        <form><button><a href="/create_teaminfo"> 팀 등록하기</a></button></form>
+        <form><button><a href="/"> 메인 페이지로</a></button></form>
+    </div>
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                         <% @doolgi.each do |d| %>
+                            <div class="col-sm-4 col-lg-4 col-md-4">
+                                <a class="thumbnail" href="/teamscreen/<%= d.id %>">
+                                    <%= d.name %>
+                                    <img class="img-responsive" src="https://pbs.twimg.com/profile_images/378800000534761325/e97d4b212c700b6eb53d147e13e0e9be_400x400.jpeg" alt="">
+                                </a>
+                            </div>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    
+    <!-- /#wrapper -->

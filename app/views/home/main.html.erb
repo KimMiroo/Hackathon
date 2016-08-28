@@ -1,0 +1,134 @@
+<div class="wrapper">
+    
+    
+    <div class="Text headtxt">
+        <div class="texts">
+            <h4 class="font_4">HACKATHON </h4>
+            <h4 class="font_4">BROADCASTING SERVICE</h4>
+        </div>
+        <div class="tvbox">
+            <%= image_tag('logotv.png', :class => "toptv") %>
+        </div>
+        
+    </div>
+    <!--<img class="wifi" src="https://static.wixstatic.com/media/2981f6_e34dc99606f44b6f98ccf73763a43eae%7Emv2.png_srz_169_169_85_22_0.50_1.20_0.00_png_srz" alt="" title="wifi" itemprop="contentURL" width="169" height="169"/>-->
+        
+
+    
+    <nav>
+        
+        <ul class="menu">
+            <a href="/">
+                <li class="menuItem">
+                    HOME
+                </li>
+            </a>
+            <a href="/schedule">
+                <li class="menuItem">
+                    Schedule
+                </li>
+            </a>
+        </ul>
+    </nav>
+    
+
+    <div class="container">
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+        <p class="video" align="center">
+            <iframe style="width: 100%; height:500px;" src="https://www.youtube.com/embed/jmEmafYx_Rg" frameborder="0" onload="doIframeResize(test, test_frame);" allowfullscreen></iframe>
+        </p>
+    </div>
+
+    
+</div>
+<footer class="foot" id="SITE_FOOTER" >
+    
+    <%= image_tag('wifi.png', :class => "wifi") %>
+  
+
+    <div class="calls">
+        <p class="font_8"> please send us email for information&#xa0;</p>
+        
+        <p class="font_8">&#xa0; &#xa0; &#xa0; - Sungwon Han) lion4151@kaist.ac.kr</p>
+        
+        <p class="font_8">&#xa0; &#xa0; &#xa0; - Hoyong Choi) chy0707@kaist.ac.kr</p>
+        
+        <p class="font_8">&#xa0; &#xa0; &#xa0; - Gunhee Park) toonivas@kaist.ac.kr</p>
+    </div>
+</footer>
+<!------------------------------------------------------------------------------------------------------------------------->
+
+<script>
+                                      // 2. This code loads the IFrame Player API code asynchronously.
+                                      var tag = document.createElement('script');
+                                
+                                      tag.src = "https://www.youtube.com/iframe_api";
+                                      var firstScriptTag = document.getElementsByTagName('script')[0];
+                                      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+                                
+                                      // 3. This function creates an <iframe> (and YouTube player)
+                                      //    after the API code downloads.
+                                      var player;
+                                      function onYouTubeIframeAPIReady() {
+                                        player = new YT.Player('player', {
+                                          height: '390',
+                                          width: '640',
+                                          videoId: 'M7lc1UVf-VE',
+                                          events: {
+                                            'onReady': onPlayerReady,
+                                            'onStateChange': onPlayerStateChange
+                                          }
+                                        });
+                                      }
+                                
+                                      // 4. The API will call this function when the video player is ready.
+                                      function onPlayerReady(event) {
+                                        event.target.playVideo();
+                                      }
+                                
+                                      // 5. The API calls this function when the player's state changes.
+                                      //    The function indicates that when playing a video (state=1),
+                                      //    the player should play for six seconds and then stop.
+                                      var done = false;
+                                      function onPlayerStateChange(event) {
+                                        if (event.data == YT.PlayerState.PLAYING && !done) {
+                                          setTimeout(stopVideo, 6000);
+                                          done = true;
+                                        }
+                                      }
+                                      function stopVideo() {
+                                        player.stopVideo();
+                                      }
+                                    </script>
+
+<!--<link rel="stylesheet" href="https://static.parastorage.com/services/santa/1.1683.16/static/css/viewer.css">-->
+
+
+<!-- jQuery -->
+<script src="assets/jquery.js"></script>
+
+<script>
+    $(function(){
+	$("li").click(function(){
+	        var add = $(this).attr('value');
+	        jQuery.ajaxSettings.traditional = true;
+		  $.ajax({
+		          type: 'get'
+		        , url: '/' + add
+		        , dataType : 'html'
+		        , success: function(data) {
+		        	$("#listDiv").html(data);
+		          }
+		  });	
+	})		
+})
+</script>
+    
+<!-- <script>
+ // IFRAME 사이즈 자동 조절
+ function doIframeResize(tdId, frameId)
+ { 
+ tdId.height = frameId.document.body.scrollHeight+10;
+ tdId.width = frameId.document.body.scrollWidth;
+ } </script>
+-->

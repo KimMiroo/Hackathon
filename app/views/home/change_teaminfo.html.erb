@@ -1,0 +1,28 @@
+<form method="POST" action="/change">
+  <div class="form-group" style="width:250px">
+    <label>팀이름</label>
+    <input name="a" type="content" class="form-control">
+  </div>
+  <div class="form-group" style="width:500px">
+    <label>팀사이트</label>
+    <input name="b" type="text" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>팀소개</label>
+    <textarea name="c" class="form-control" rows="2"></textarea>
+  </div>
+  <div class="form-group">
+    <label>아이템소개</label>
+    <textarea name="d" class="form-control" rows="5"></textarea>
+  </div>
+  <label>진행정도</label>
+  <select class="form-control" name="e">
+  <option value="마 이제 시작이다(1)">마 이제 시작이다(1)</option>
+  <option value="시작이 반 아니가(2)">시작이 반 아니가(2)</option>
+  <option value="아따 갈길이 멀구마(3)">아따 갈길이 멀구마(3)</option>
+  <option value="이제 반밖에 안왔나(4)">이제 반밖에 안왔나(4)</option>
+  <option value="마 거의 끝났다(5)">마 거의 끝났다(5)</option>
+  <option value="마 지려부렸다(6)">마 지려부렸다(6)</option>
+</select>
+  <button type="submit" class="btn btn-default">수정</button>
+</form>
