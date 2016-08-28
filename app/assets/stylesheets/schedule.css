@@ -1,0 +1,118 @@
+iframe {
+    border: 0px;
+    margin: 0px;
+}
+.wrapper {
+    width:1200px;
+    margin: auto;
+    background-color: white;
+    padding-bottom: 50px;
+    
+}
+.Text h4 {
+    font-family: trend-sans-w00-four, Tahoma;
+    color: #666;
+    margin:0px;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px #aaa;
+}
+p.video {
+    /*background: transparent;*/
+    background-color: skyblue;
+    padding: 44px;
+    margin: 0px 50px 50px 50px;
+    border-radius: 44px;
+}
+.texts {
+    width: calc(100% - 150px);
+    display: inline-block;
+}
+.tvbox {
+    left: auto;
+    display: inline-block;
+}
+
+.toptv {
+    display: inline-block;
+    margin-left: 30px;
+    width: 110px;
+    height: 110px;
+    transform: rotate(13.87287109029603deg);
+    -webkit-transform: rotate(13.87287109029603deg);
+}
+
+.headtxt {
+    padding-top: 50px;
+    width:800px;
+    margin:auto;
+}
+.lion {
+    position: static;
+    top: 82px;
+    left: 899.5px;
+    width: 43px;
+    height: 37px;
+    transform: rotate(14.46947489891022deg);
+    -webkit-transform: rotate(14.46947489891022deg);
+}
+.menuItem {
+    margin: 0px 20px;
+    display: inline-block;
+    list-style-type: none;
+}
+nav {
+    margin: 50px 0PX 9PX 0px;
+}
+nav h2.font_2 {
+    
+    font-size: 23px; 
+    width:60px;
+    display: inline-block;
+    margin: 0 0 0 90px;
+}
+ul.menu {
+    display: inline-block;
+    margin: 0 0 0 50px;
+}
+ul.menu a {
+    font-family: Comic Sans MS;
+    color: rgba(1, 177, 175, 1);
+    font-weight: bold;
+    margin-right: 15px;
+    text-decoration: none;
+    border: 2px solid rgba(1, 177, 175, 1);
+    border-bottom: 0px;
+    padding: 10px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+ul.menu a:hover {
+    font-family: Comic Sans MS;
+    color: #FFF;
+    background-color: rgba(1, 177, 175, 1);
+}
+footer {
+    margin: auto;
+    margin-top: 14px;
+    width: 1200px;
+}
+.calls {
+    float:right;
+}
+.wifi {
+    width : 170px;
+    height : 170px;
+    margin-left: -10px;
+    margin-top: -10px;
+    float: right;
+    transform: rotate(14.46947489891022deg);
+    -webkit-transform: rotate(14.46947489891022deg);
+}
+p.font_8 {
+    color: #444;
+    margin: 6px 0px;
+}
+.schedule {
+    width:100%;
+}
