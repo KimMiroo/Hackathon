@@ -9,7 +9,7 @@ Rails.application.configure do
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
-  config.action_controller.asset_host = 'mycdnsubdomain.fictional-cdn.com'
+  #config.action_controller.asset_host = 'mycdnsubdomain.fictional-cdn.com'
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
@@ -27,7 +27,7 @@ Rails.application.configure do
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
-  config.assets.css_compressor = :sass
+  #config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
